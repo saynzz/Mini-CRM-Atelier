@@ -1,0 +1,20 @@
+# Локальная конфигурация с реальными SMTP-учётными данными — не должна
+# попадать в репозиторий. При клонировании скопируйте config.example.py
+# в config.py и впишите свои значения.
+config.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Тестовый почтовый "ящик" (одноразовые коды в открытом виде)
+auth/outbox.log
+
+# Артефакты SQLite
+atelier.db-journal
+atelier.db-wal
+atelier.db-shm
+
+# macOS
+.DS_Store
